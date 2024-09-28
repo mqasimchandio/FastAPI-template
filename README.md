@@ -8,29 +8,27 @@
 - **Delete tasks**: Remove unwanted tasks by their UUIDs.
 - **Error handling**: Raises HTTP exceptions with appropriate status codes (404 Not Found) for missing resources.
 ## Installation
-### To run this API, you'll need Python 3.6 or later with the following libraries installed:
+To run this API, you'll need Python 3.6 or later with the following libraries installed:
 
 ```
 pip install fastapi uvicorn python-multipart
 ```
 
 ## Usage
-### Clone this repository or download the code.
+Clone this repository or download the code.
+Install the required dependencies (see Installation).
 
-### Install the required dependencies (see Installation).
-
-## Run the API server:
+### Run the API server:
 ```
 python main.py
 ```
 
-## This starts the server on http://0.0.0.0:8080.
-### **in case of not working:**
-  - **Windows:** redirect to `http://localhost:8080`
-  - **Mac:** redirect to `http:/0.0.0.0:8000`
+### This starts the server on http://localhost:8080 (Windows). 
+- Redirect to `http:/0.0.0.0:8000` (Mac)
+
 Use tools like Postman, curl, or your preferred HTTP client to interact with the API endpoints:
 
-## Create a task:
+### Create a task:
 ```
 POST http://localhost:8080/tasks/
 Content-Type: application/json
@@ -42,13 +40,13 @@ Content-Type: application/json
 }
 ```
 
-## Read all tasks:
+### Read all tasks:
 `GET http://localhost:8080/tasks/`
-## Read a specific task:
+### Read a specific task:
 `GET http://localhost:8080/tasks/{task_id}`
 Replace `{task_id}` with the actual UUID of the task.
 
-## Update a task:
+### Update a task:
 ```
 PUT http://localhost:8080/tasks/{task_id}
 Content-Type: application/json
@@ -59,5 +57,5 @@ Content-Type: application/json
 }
 ```
 
-## Delete a task:
+### Delete a task:
 `DELETE http://localhost:8080/tasks/{task_id}`
