@@ -1,12 +1,12 @@
 # **FastAPI Task Manager**
-### This project implements a simple task manager API using FastAPI. It allows you to create, read, update, and delete tasks.
+This project implements a simple task manager API using FastAPI. It allows you to create, read, update, and delete tasks.
 
 ## Features
 - **Create tasks**: Add new tasks with titles, optional descriptions, and completion status.
-- **Read tasks**: Retrieve all tasks or a specific task by its unique identifier (UUID).
+- **Read tasks**: Retrieve all tasks or a specific task by its unique identifier `UUID`.
 - **Update tasks**: Modify existing tasks by providing updated details.
-- **Delete tasks**: Remove unwanted tasks by their UUIDs.
-- **Error handling**: Raises HTTP exceptions with appropriate status codes (404 Not Found) for missing resources.
+- **Delete tasks**: Remove unwanted tasks by their `UUIDs`.
+- **Error handling**: Raises HTTP exceptions with appropriate status codes `404 Not Found` for missing resources.
 ## Installation
 To run this API, you'll need Python 3.6 or later with the following libraries installed:
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 `GET http://localhost:8080/tasks/`
 ### Read a specific task:
 `GET http://localhost:8080/tasks/{task_id}`
-Replace `{task_id}` with the actual UUID of the task.
+Replace `{task_id}` with the actual `UUID` of the task.
 
 ### Update a task:
 ```
